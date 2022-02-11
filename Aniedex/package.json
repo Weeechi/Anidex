@@ -1,28 +1,16 @@
 {
-  "name": "anidex",
+  "name": "aniedex",
   "version": "1.0.0",
-  "engines":{
-    "node": "16.13.1"
-  },
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Weeechi/Anidex.git"
-  },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Weeechi/Anidex/issues"
-  },
-  "homepage": "https://github.com/Weeechi/Anidex#readme",
   "dependencies": {
     "dotenv": "^16.0.0",
-    "ejs": "^3.1.6",
     "express": "^4.17.2",
     "method-override": "^3.0.0",
     "mongoose": "^6.2.1"

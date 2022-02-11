@@ -46,6 +46,20 @@ app.use(methodOverride('_method'));// allow POST, PUT and DELETE from a form
 
 //___________________
 // Routes
+
+app.get('/anidex/new',   (req, res) => {
+  res.render('new.ejs')
+})
+
+
+
+
+
+
+
+
+
+
 //___________________
 //localhost:3000
 app.get('/' , (req, res) => {
@@ -55,4 +69,4 @@ app.get('/' , (req, res) => {
 //___________________
 //Listener
 //___________________
-app.listen(PORT, () => console.log( 'Listening on port:', PORT));
+app.listen(3000, () => console.log( 'Listening on port:', 3000));
