@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/public/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@200&family=Space+Mono&display=swap" rel="stylesheet">
+
+
+    <title>Anidex-index</title>
+</head>
+<header>
+    <div id="navbar">
+        <a href="/anidex/">Home</a>
+        <a href="/anidex/new">Share a review!</a>
+    </div>
+  </header>
+<body>
+    <center><h1 class="title">Anidex</h1></center>
+    <ul >
+        <%for (let i = 0; i < anidex.length; i++)  {
+            %> <center><li class="column">
+                <a href="/anidex/<%=anidex[i].id%>">
+                    <%=anidex[i].name%> <br>
+                </a>
+                <img src=" <%=anidex[i].img%> " alt="imgs"
+                width = '300' height="400">
+
+                <a href="/anidex/<%=anidex[i].id%>">
+                <form action="/anidex/<%=anidex[i].id%>?_method=DELETE" method="post">
+                <input class='btn btn-danger'type="submit" value="DELETE"> 
+            </form>
+            </a>
+                <a class="btn btn-outline-primary"
+                href="/anidex/<%=anidex[i].id%>/edit">edit</a><br><br></center>
+            </a>
+            </li>
+     <% } %>
+
+    </ul>
+
+
+<nav class = navBar>
+    <a href="/anidex/new">Share a review!</a>
+</nav>
+
+</body>
+</html>

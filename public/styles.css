@@ -1,0 +1,25 @@
+body{
+    background-color: aqua;
+}
+
+
+:root{
+    --ff-primary: 'Space Mono', monospace;
+    --ff-secondary:'Saira Semi Condensed', sans-serif;
+    --fw-reg: 300;
+    --fw-bold: 900;
+}
+.navBar{
+    justify-content: flex-start;
+}
+
+.title{
+    font-family: var(--ff-primary) !important;
+    color: cadetblue;
+
+}
+
+.column{
+    font-family: var(--ff-secondary);
+    flex-wrap: wrap;
+}

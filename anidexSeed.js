@@ -1,7 +1,7 @@
 module.exports = [
  {
     name: 'Dragon Ball Z',
-    img: 'https://imgur.com/gallery/Uw7aVyd.jpg',
+    img: 'https://imgur.com/wPTVn64.jpg',
     genre: 'Action, Adventure, Fantasy',
     studio: 'Toei Animation',
     completed: true,
@@ -10,7 +10,7 @@ module.exports = [
  },
  {
     name: 'Demon Slayer',
-    img: 'https://imgur.com/gallery/1VQJEyj.jpg',
+    img: 'https://imgur.com/1iaMgL5.jpg',
     genre: 'Action, Adventure, Fantasy',
     studio: 'Ufotable',
     completed: true,
@@ -19,7 +19,7 @@ module.exports = [
  },
  {
     name: `Fullmetal Alchemist: Brotherhood`,
-    img: 'https://imgur.com/t/edward_elric/8nDaRZ6.jpg',
+    img: 'https://imgur.com/nAwUewD.jpg',
     genre: 'Steampunk, Adventure, Dark Fantasy,',
     studio: 'Bones',
     completed: true,
@@ -28,7 +28,7 @@ module.exports = [
  },
  {
     name: `Avatar: The Last Airbender`,
-    img: 'https://imgur.com/t/edward_elric/8nDaRZ6.jpg',
+    img: 'https://imgur.com/OiaEbLW.jpg',
     genre: 'Action-Adventure, Fantasy, Comedy-Drama',
     studio: 'JM Animation, DR Movie, Moi Animation',
     completed: true,

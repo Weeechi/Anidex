@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@200&family=Space+Mono&display=swap" rel="stylesheet">
+
+
+    <title>Anidex-edit</title>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <a href="/anidex/">Home</a>
+            <a href="/anidex/new">Share a review!</a>
+        </div>
+      </header>
+    <h1>Edit Review</h1>
+    <form action="/anidex/<%=anidex.id%>?_method=PUT" method="POST">
+        name: <input type="text" name="name" value="<%=anidex.name%>"><br>
+        img: <input type="text" name="img" value="<%=anidex.img%>"><br>
+        genre: <input type="text" name="genre" value="<%=anidex.genre%>"><br>
+        studio: <input type="text" name="studio" value="<%=anidex.studio%>"><br>
+        reviews: <input type="text" name="reviews" value="<%=anidex.reviews%>"><br>
+        comments: <input type="text" name="comments" value="<%=anidex.comments%>"><br>
+        completed: <input type="checkbox" name="completed">
+        <%if(anidex.completed === true) { %>
+            checked
+        <% } %> <br> 
+        <input type="submit"  name="submit" value="submit">
+    </form>
+
+</body>
+</html>

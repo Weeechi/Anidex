@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@200&family=Space+Mono&display=swap" rel="stylesheet">
+
+
+
+    <title>Anidex-Show</title>
+</head>
+<body>
+    <header>
+        <div id="navbar">
+            <a href="/anidex/">Home</a>
+            <a href="/anidex/new">Share a review!</a>
+        </div>
+      </header>
+        <center><h1><%=anidex.name%></h1>
+            <img src=" <%=anidex.img%> " alt="imgs"
+                width = '300' height="400">
+        </a><br>
+        Genre: <%=anidex.genre%><br>  
+        Studio: <%=anidex.studio%><br> 
+        Review: <%=anidex.review%><br>
+        Comments: <%=anidex.comments%><br>
+        Completed:<% if (anidex.completed === true){ %>
+        I've finished this show!
+        <% } else { %>
+        Still watching!
+   <% } %></center>
+
+</body>
+</html>
+
+<!-- name: String,
+img: String,
+genre: String,
+studio: String,
+completed: Boolean,
+review: String,
+comments: String -->

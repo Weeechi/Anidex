@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-const AnidexSchema = new mongoose.Schema ({
+const anidexSchema = new mongoose.Schema ({
     name: String,
     img: String,
     genre: String,
@@ -11,9 +11,9 @@ const AnidexSchema = new mongoose.Schema ({
  
 })
 
+const Anidex = mongoose.model('Anidex', anidexSchema )
 
-
-
+module.exports = Anidex
 
 
 
