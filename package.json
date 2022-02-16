@@ -2,7 +2,7 @@
   "name": "anidex",
   "version": "1.0.0",
   "description": "",
-  "main": "anidex.js",
+  "main": "server.js",
   "engines": {
     "node": "16.13.1"
   },
