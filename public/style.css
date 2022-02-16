@@ -17,6 +17,7 @@ body{
 .nav{
     flex-wrap: wrap;        
     justify-content: space-evenly;
+    color: silver;
 }
 
 .title{
@@ -50,8 +51,8 @@ body{
    padding: 5px 25px;
    text-transform: uppercase;
    transition: 0.5s;
-   background-size: 200% auto;
-   color: white;            
+   color: white;
+   background-size: 200% auto;        
    border-radius: 10px;
    display: block;
    max-width: 6em;

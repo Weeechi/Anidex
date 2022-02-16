@@ -1,0 +1,53 @@
+body{
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+
+:root{
+    --ff-primary: 'Space Mono', monospace;
+    --ff-secondary:'Saira Semi Condensed', sans-serif;
+    --fw-reg: 300;
+    --fw-bold: 900;
+}
+
+.nav{
+    flex-wrap: wrap;        
+    justify-content: space-evenly;
+    color: silver;
+}
+
+p, h1 {
+    color: silver;
+    font-family: var(--ff-primary);
+    text-align: center;
+}
+h1{
+    margin-bottom: 1.5em;
+}
+
+.btn-grad {background-image: linear-gradient(to right, #C04848 0%, #480048  51%, #C04848  100%)}
+.btn-grad {
+margin-top: -2em;
+   padding: 5px 35px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .cowboy{
+     margin-left: 69em;
+     margin-top: 9.2em;
+ }

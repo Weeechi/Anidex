@@ -8,30 +8,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Saira+Semi+Condensed:wght@200&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/edit.css">
+
 
     <title>Anidex-edit</title>
 </head>
 <body>
     <header>
-        <div id="navbar">
+        <div class="nav">
             <a href="/anidex/">Home</a>
             <a href="/anidex/new">Share a review!</a>
         </div>
       </header>
     <h1>Edit Review</h1>
-    <form action="/anidex/<%=anidex.id%>?_method=PUT" method="POST">
-        name: <input type="text" name="name" value="<%=anidex.name%>"><br>
-        img: <input type="text" name="img" value="<%=anidex.img%>"><br>
-        genre: <input type="text" name="genre" value="<%=anidex.genre%>"><br>
-        studio: <input type="text" name="studio" value="<%=anidex.studio%>"><br>
-        reviews: <input type="text" name="reviews" value="<%=anidex.reviews%>"><br>
-        comments: <input type="text" name="comments" value="<%=anidex.comments%>"><br>
-        completed: <input type="checkbox" name="completed">
+    <form class='form' action="/anidex/<%=anidex.id%>?_method=PUT" method="POST">
+       <p>  IMG: <input type="text" name="img" value="<%=anidex.img%>"><br>
+           name: <input type="text" name="name" value="<%=anidex.name%>"><br>
+        Genre: <input type="text" name="genre" value="<%=anidex.genre%>"><br>
+        Studio: <input type="text" name="studio" value="<%=anidex.studio%>"><br>
+        Reviews: <input type="text" name="reviews" value="<%=anidex.reviews%>"><br>
+        Comments: <input type="text" name="comments" value="<%=anidex.comments%>"><br>
+        Completed: <input type="checkbox" name="completed"></p>
         <%if(anidex.completed === true) { %>
-            checked
         <% } %> <br> 
-        <input type="submit"  name="submit" value="submit">
+       <center> <input class='btn-grad' type="submit"  name="submit" value="submit"></center>
     </form>
+
+    <img src="https://imgur.com/7oRS6Rm.jpg" alt="cowboy" class='cowboy'>
 
 </body>
 </html>
