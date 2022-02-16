@@ -12,7 +12,8 @@ require('dotenv').config()
 const Anidex = require('./anidex.js')
 const aniSeed = require('./anidexSeed.js')
 const mongoURI = 'mongodb://localhost:27017/' + 'anidex'
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'))
+
 
 
 
