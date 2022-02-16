@@ -10,7 +10,6 @@ const anidexSchema = new mongoose.Schema ({
     comments: String
  
 })
-
 const Anidex = mongoose.model('Anidex', anidexSchema )
 
 module.exports = Anidex

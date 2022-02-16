@@ -9,6 +9,8 @@ module.exports = [
     comments:'Fun fights scenes. Too much talking'
  },
  {
+
+   
     name: 'Demon Slayer',
     img: 'https://imgur.com/1iaMgL5.jpg',
     genre: 'Action, Adventure, Fantasy',

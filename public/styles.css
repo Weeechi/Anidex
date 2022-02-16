@@ -12,10 +12,9 @@ body{
 .navBar{
     justify-content: flex-start;
 }
-
 .title{
     font-family: var(--ff-primary) !important;
-    color: cadetblue;
+
 
 }
 

@@ -18,7 +18,7 @@ app.use(express.static(__dirname + '/public'));
 
 //___________________
 //Port
-//___________________
+//____________
 // Allow use of Heroku's port or your own local port, depending on the environment
 // const PORT = process.env.PORT || 3000;
 
