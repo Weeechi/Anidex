@@ -8,6 +8,14 @@
     "method-override": "^3.0.0",
     "mongoose": "^6.2.1",
     "serve": "^13.0.2"
-  }
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build"
+    }
 }
 
