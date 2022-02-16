@@ -10,7 +10,9 @@
     "express": "^4.17.2",
     "method-override": "^3.0.0",
     "mongoose": "^6.2.1",
-    "serve": "^13.0.2"
+    "serve": "^13.0.2",
+    "node": "16.x"
+
     
   },
   "scripts": {
@@ -19,7 +21,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build"
     }
 }
 
