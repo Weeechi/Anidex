@@ -12,8 +12,7 @@ require('dotenv').config()
 const Anidex = require('./anidex.js')
 const aniSeed = require('./anidexSeed.js')
 const mongoURI = 'mongodb://localhost:27017/' + 'anidex'
-app.use(express.static("public"))
-
+app.use(express.static(__dirname + '/public'));
 
 
 
@@ -130,13 +129,13 @@ Anidex.create(req.body, (error, createdShows) =>{
 
 
 
-// Anidex.create(aniSeed, (err, data) => {
-//   if (err) {
-//       console.log(err.message);
-//   }else {
-//     console.log('Added shows to anidex');
-//   }
-// })
+Anidex.create(aniSeed, (err, data) => {
+  if (err) {
+      console.log(err.message);
+  }else {
+    console.log('Added shows to anidex');
+  }
+})
 
 
 
