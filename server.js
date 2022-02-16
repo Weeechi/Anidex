@@ -20,7 +20,7 @@ app.use(express.static(__dirname + '/public'));
 //Port
 //___________________
 // Allow use of Heroku's port or your own local port, depending on the environment
-const PORT = process.env.PORT || 3000;
+// const PORT = process.env.PORT || 3000;
 
 //___________________
 //Database
@@ -129,13 +129,13 @@ Anidex.create(req.body, (error, createdShows) =>{
 
 
 
-Anidex.create(aniSeed, (err, data) => {
-  if (err) {
-      console.log(err.message);
-  }else {
-    console.log('Added shows to anidex');
-  }
-})
+// Anidex.create(aniSeed, (err, data) => {
+//   if (err) {
+//       console.log(err.message);
+//   }else {
+//     console.log('Added shows to anidex');
+//   }
+// })
 
 
 
@@ -145,7 +145,7 @@ Anidex.create(aniSeed, (err, data) => {
 //___________________
 localhost:3000
 app.get('/' , (req, res) => {
-  res.send('Hello World pp');
+  res.send('Hello World');
 });
 
 //___________________
