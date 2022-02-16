@@ -20,5 +20,5 @@ body{
 
 .column{
     font-family: var(--ff-secondary);
-    flex-wrap: wrap;
+    list-style: none;
 }
