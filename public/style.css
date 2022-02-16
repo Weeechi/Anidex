@@ -1,5 +1,8 @@
 body{
-    background-color: aqua;
+    background: #c31432;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #240b36, #c31432);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #240b36, #c31432); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 
 
@@ -9,16 +12,77 @@ body{
     --fw-reg: 300;
     --fw-bold: 900;
 }
-.navBar{
-    justify-content: flex-start;
+
+
+.nav{
+    flex-wrap: wrap;        
+    justify-content: space-evenly;
 }
+
 .title{
-    font-family: var(--ff-primary) !important;
-
-
+    font-family: var(--ff-secondary);
+    font-weight: var(--fw-bold);
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: .5em;
+    margin-left: .6em;
+    color: silver;
 }
 
 .column{
     font-family: var(--ff-secondary);
     list-style: none;
+    color: black;
 }
+
+.nameCard{
+    color: silver;
+    font-size: 30px;
+}
+
+
+
+
+
+.btn-grad {background-image: linear-gradient(to right, #304352 0%, #d7d2cc  51%, #304352  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 5px 25px;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   border-radius: 10px;
+   display: block;
+   max-width: 6em;
+   font-size: var(--fw-bold);
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
+ .btn-grad2 {background-image: linear-gradient(to right, #000000 0%, #e74c3c  51%, #000000  100%)}
+ .btn-grad2 {
+    margin: 10px;
+    padding: 5px 25px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad2:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+ 
+
+
+

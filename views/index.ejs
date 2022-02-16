@@ -17,17 +17,17 @@
     <title>Anidex-index</title>
 </head>
 <header>
-    <div id="navbar">
+    <div class="nav">
         <a href="/anidex/">Home</a>
         <a href="/anidex/new">Share a review!</a>
     </div>
   </header>
 <body>
-    <center><h1 class="title">   Anidex</h1></center>
+    <h1 class="title">Anidex</h1>
     <ul >
         <%for (let i = 0; i < anidex.length; i++)  {
             %> <center><li class="column">
-                <a href="/anidex/<%=anidex[i].id%>">
+                <a  href="/anidex/<%=anidex[i].id%>" class="nameCard">
                     <%=anidex[i].name%> <br>
                 </a>
                 <img src=" <%=anidex[i].img%> " alt="imgs"
@@ -35,10 +35,10 @@
 
                 <a href="/anidex/<%=anidex[i].id%>">
                 <form action="/anidex/<%=anidex[i].id%>?_method=DELETE" method="post">
-                <input class='btn btn-danger'type="submit" value="DELETE"> 
+                <input class='btn-grad2'type="submit" value="DELETE"> 
             </form>
             </a>
-                <a class="btn btn-outline-primary"
+                <a class="btn-grad"
                 href="/anidex/<%=anidex[i].id%>/edit">edit</a><br><br></center>
             </a>
             </li>
