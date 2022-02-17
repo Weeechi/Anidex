@@ -17,7 +17,10 @@ body{
     flex-wrap: wrap;        
     justify-content: space-evenly;
     color: silver;
+    font-size: 18px;
+    font-family: var(--ff-primary);
 }
+
 
 p, h1 {
     color: silver;
