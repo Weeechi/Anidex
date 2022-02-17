@@ -32,3 +32,11 @@ h1{
 p{
     margin-top: 10px;
 }
+
+.boar{
+    max-height: 40em;
+    margin-left: 85em;
+    margin-top: -40em;
+    position: sticky;
+}
+
